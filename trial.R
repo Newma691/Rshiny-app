@@ -1,0 +1,16 @@
+library("fACD")
+library("ACDm")
+library("DAAG")
+library("graphics")
+library("lmvar")
+library("R.utils")
+library("WVPlots")
+library("vtreat")
+library("Metrics")
+library("car")
+library("ACDm")
+
+
+transIBM <- read.csv("ibm.txt", header = FALSE, sep= "")
+names(transIBM) <- c("time", "Volume", "Bid Price", "Ask Price","Price")
+head(transIBM, 11)
